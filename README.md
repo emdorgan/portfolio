@@ -20,14 +20,13 @@ The goal of this project is to put together a professional portfolio to showcase
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [Link to Portfolio Site](https://emdorgan.github.io/portfolio/)
 
 
 ## Authors
 
 * **Emily Dorgan** 
 
-- [Link to Portfolio Site](#)
 - [Link to Github](https://github.com/emdorgan)
 - [Link to LinkedIn](https://www.linkedin.com/in/emily-dorgan/)
 
