@@ -10,10 +10,14 @@ The goal of this project is to put together a professional portfolio to showcase
 * Style the nav bar
 * Make responsive CSS so that the nav bar shifts to the top on mobile view
 
+![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
+![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
+
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Figma](https://www.figma.com)
 
 ## Deployed Link
 
