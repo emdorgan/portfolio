@@ -4,7 +4,6 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
-* Add all HTML elements
 * Style the basic landing page
 * Style the portfolio page (ensure one takes up the majority of the page)
 * Style the nav bar
