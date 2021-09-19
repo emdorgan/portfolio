@@ -5,19 +5,26 @@ body {
     display: flex;
     overflow-x:hidden;
 }
+
 header {
     background-color: #908DFF;
     width: 25%;
     height: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    text-align: center;
+}
+
+header img {
+    height: 152px;
+    width: 152px;
+    border: 5px solid black;
+    border-radius: 50%;
 }
 aside {
     width: 25%;
     height:100%;
 }
+
 .page {
     float:right;
     width: 75%;
