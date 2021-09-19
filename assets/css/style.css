@@ -1,3 +1,7 @@
+:root {
+    --triangle: blue;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     height:100vh;
@@ -41,9 +45,50 @@ header nav {
 }
 
 header nav li {
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
+    padding: 5px 0px 5px 0px;
     font-size: 1.4em;
 }
+
+/*
+header .triangle1 {
+    float: right;
+    position:fixed;
+    top: 402px;
+    left: 24.2%;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent; 
+    border-right:14px solid var(--triangle);  
+}
+
+header .triangle2 {
+    float: right;
+    position:fixed;
+    top: 454px;
+    left: 24.2%;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent; 
+    border-right:14px solid var(--triangle);  
+}
+
+header .triangle3 {
+    float: right;
+    position:fixed;
+    top: 506px;
+    left: 24.2%;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent; 
+    border-right:14px solid var(--triangle);
+} */
 
 header .social-media {
     top: 200px;
