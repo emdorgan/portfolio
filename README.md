@@ -4,10 +4,12 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
+* IMPORTANT: Try changing position relative to absolute within flexbox
 * Style the basic landing page
 * Style the portfolio page (ensure one takes up the majority of the page)
-* Style the nav bar
-* Make responsive CSS so that the nav bar shifts to the top on mobile view
+* Style the About Me page
+* Style the nav bar on small screen mode
+* Make drop-down menu
 
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 ![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
