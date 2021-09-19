@@ -14,11 +14,41 @@ header {
     text-align: center;
 }
 
+header a:link, a:visited {
+    text-decoration: none;
+}
+
+header div, nav {
+    position: relative;
+    top: 90px;
+}
+
 header img {
     height: 152px;
     width: 152px;
-    border: 5px solid black;
     border-radius: 50%;
+}
+header h1 {
+    margin: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 40px;
+}
+
+header nav li {
+    margin: 20px;
+}
+
+header .social-media {
+    top: 200px;
+    font-size: 20px;
+}
+header .social-media .fa {
+    margin: 10px;
+    margin-top: 15px;
 }
 aside {
     width: 25%;
