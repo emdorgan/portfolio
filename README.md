@@ -4,7 +4,6 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
-* IMPORTANT: Try changing position relative to absolute within flexbox
 * Style the basic landing page
 * Style the portfolio page (ensure one takes up the majority of the page)
 * Style the About Me page
@@ -34,4 +33,4 @@ The goal of this project is to put together a professional portfolio to showcase
 
 ## Acknowledgments
 
-* 
+* [W3Schools Mobile nav bar Tutorial](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
