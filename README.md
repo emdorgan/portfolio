@@ -4,11 +4,11 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
+* Fix the issues where the page renders under the nav bar in mobile mode
+* Make the social media icons shrink (or resize on ~300px width screen)
 * Style the basic landing page
-* Style the portfolio page (ensure one takes up the majority of the page)
+* Style the portfolio page (ensure one project takes up the majority of the page)
 * Style the About Me page
-* Style the nav bar on small screen mode
-* Make drop-down menu
 
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 ![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
