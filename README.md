@@ -9,6 +9,7 @@ The goal of this project is to put together a professional portfolio to showcase
 * Style the basic landing page
 * Style the portfolio page (ensure one project takes up the majority of the page)
 * Style the About Me page
+* Style the Contact Me page
 
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 ![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
