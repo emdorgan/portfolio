@@ -22,11 +22,11 @@
             <a href="javascript:void(0);" class="mobile-nav" onclick="openNav()">
                 <em class="fa fa-bars"></em>
             </a>
-            <ul id="myLinks">
-                <li><a href="#portfolio" onclick="closeNav()" class="anchor"> Portfolio</a></li>
-                <li><a href="#contact-me" onclick="closeNav()" class="anchor">Contact Me</a></li>
-                <li><a href="#about-me" onclick="closeNav()" class="anchor"> About Me</a></li>
-                <li><a href="#resume" onclick="closeNav()" class="anchor"> Resum&eacute</a></li>
+            <ul id="navLinks">
+                <li><a href="#portfolio" onclick="closeNav()"> Portfolio</a></li>
+                <li><a href="#contact-me" onclick="closeNav()">Contact Me</a></li>
+                <li><a href="#about-me" onclick="closeNav()"> About Me</a></li>
+                <li><a href="#resume" onclick="closeNav()"> Resum&eacute</a></li>
             </ul>
         </nav>
         <div class="social-media">
@@ -145,19 +145,19 @@
         </footer>
     </section>
     <script>
-        function openNav() {
-            var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
+        function openNav() { // this function triggers onClick of the nav mobile menu
+            var mobileNav = document.getElementById("navLinks"); // it fetches the element with an id of 'navLinks' and stores it in a variable
+                if (mobileNav.style.display === "block") { // checks to see if the variable's display is equal to block
+                    mobileNav.style.display = "none"; //if it is, then switch it to display: none
                 } 
                 else {
-                    x.style.display = "block";
+                    mobileNav.style.display = "block"; //if it isnt then we can infer that it's set to display: none, in which case we switch to display: block
           }
-        }
-        function closeNav() {
-            var y = document.getElementById("myLinks");
-            if (document.documentElement.clientWidth < 768){
-                y.style.display = "none";
+        }               // This code was adapted from the w3schools mobile drop-down menu tutorial.
+        function closeNav() {  // this function triggers onClick of the nav mobile links
+            var mobileLinks = document.getElementById("navLinks"); //it fetches the element with an id of 'navLinks' and stores it in a variable
+            if (document.documentElement.clientWidth < 768){ // it checks to see if the browser is in small screen mode
+                mobileLinks.style.display = "none"; //if it is, then switch display of the navLinks to none.
             }
         }
         </script>

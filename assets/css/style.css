@@ -40,7 +40,7 @@ header a:hover, header a:active {
 
 header .profile {
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 5%;
 }
 
@@ -198,7 +198,7 @@ header .social-media .fa {
         min-height: 120px;
         display:flex;
     }
-    header #myLinks {
+    header #navLinks {
         display: none;
     }
     .page{
