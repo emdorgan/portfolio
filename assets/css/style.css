@@ -187,14 +187,25 @@ header .social-media .fa {
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
-.flex article {
+.flex article { /* REMEMBER TO DELETE THIS ONCE the articles are changed to anchors */
     margin: 5px;
     flex-grow: 1;
     flex-basis: 40%;
 }
+.flex a {
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 40%;
+} 
 #refactor-project {
     flex-grow: 2;
     flex-basis: 80%;
+}
+
+#refactor-project:hover {
+    position:relative;
+    right: 5px;
+    bottom:5px;
 }
 
 #refactor-project img{
@@ -208,7 +219,7 @@ header .social-media .fa {
     margin-top: 100px;
     padding: 10px;
     background-color: var(--sidebarColor);
-    width: 40%;
+    width: 30%;
     color: white;
 }
 .project-container h3{
