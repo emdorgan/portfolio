@@ -4,6 +4,8 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
+* change padding or margin between nav items to be % based.
+* Figure out elegant background image for landing page.
 * Make the social media icons shrink (or resize on ~300px width screen)
 * Style the portfolio page (ensure one project takes up the majority of the page)
 * Style the About Me page
