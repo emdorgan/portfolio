@@ -17,6 +17,7 @@ The goal of this project is to put together a professional portfolio to showcase
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Figma](https://www.figma.com)
 
 ## Deployed Link
