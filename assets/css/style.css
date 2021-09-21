@@ -15,6 +15,11 @@ body {
 .page > section {
     padding-top: 20px;
     height: 100vh;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.page #portfolio {
+    height: 200vh;
 }
 header {
     background-color: var(--sidebarColor);
@@ -35,7 +40,7 @@ header a, .social-media {
 }
 header a:hover, header a:active {
     color: white;
-    font-size: 1.1em;
+    /* font-size: 1.1em; Needs to be fixed; see readme improvements*/ 
 }
 
 header .profile {
@@ -139,11 +144,11 @@ header .social-media .fa {
 .page {
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
 }
 
 .page h2 {
     font-size: 36px;
+    padding-bottom: 5px;
 }
 
 .introduction {
@@ -175,16 +180,40 @@ header .social-media .fa {
 #portfolio .flex {
     display:flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+}
+.portfolio-header {
+    border-bottom: 2px ridge black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 .flex article {
-    border:5px solid black;
     margin: 5px;
     flex-grow: 1;
     flex-basis: 40%;
 }
 #refactor-project {
     flex-grow: 2;
-    flex-basis: 100%;
+    flex-basis: 80%;
+}
+
+#refactor-project img{
+    width:100%;
+    height: auto;
+    border:5px solid var(--sidebarColor);
+    border-radius: 5%;
+}
+#refactor-project .project-container {
+    position: absolute;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: var(--sidebarColor);
+    width: 40%;
+    color: white;
+}
+.project-container h3{
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px){
