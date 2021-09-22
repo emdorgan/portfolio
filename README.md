@@ -1,21 +1,27 @@
 # Portfolio Project
 
-The goal of this project is to put together a professional portfolio to showcase the work we'll be doing in this class.
+The goal of this project is to put together a professional portfolio to showcase the work we'll be doing in this class. My approach was to create paper wireframes, then draw one on figma to organize my thoughts, taking inspiration from beautiful responsive web developer portfolios on the internet. Design-wise, I wanted a clean and professional portfolio that still remains aesthetically pleasing. The design color scheme was inspired by the pink/blue/white colors of the trans pride flag.
 
-# To-do list
+Since I see myself as a front-end web developer, I saw this as an opportunity to challenge myself and make something ambitious: A fixed sidebar that flips to the top of the screen on resize. This was by far the most challenging aspect, and took 70% of the time I allocated to this project.
 
-* Figure out elegant background image for landing page.
-* Style the About Me page
+# Known bugs
 
-# Possible improvements
+If you click on the links (or just open and close the mobile nav) in mobile mode and then resize the screen, those links remain hidden. I figured it would be a bad idea to have a constantly running JS script in the background just to check, and couldn't find the 'trigger' for a resizing of the window, so I left it as is for now.
 
-* Fix the bug where the nav items get hidden on browser resize
-* Figure out why the text-wrap changes abruptly on portfolio page
+# Potential improvements
+
+* Fix the bug (mentioned above) where the nav items get hidden on browser resize.
+* Figure out why the text-wrap changes abruptly on portfolio page.
 * change padding or margin between nav items to be % based.
+* spacing between non-featured projects could be improved to be more consistent.
+* Make my name and title show up on the dropdown menu in small screen mode
+* Change the id selector of the featured project to make it more flexible and easier to edit.
 
 
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 ![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
+![mobile-viewport](screenshots/mobile-viewport.png "Screenshot of the projects page on mobile viewport")
+![about-me-page](screenshots/about-me-page.png "Screenshot of the about me page on desktop mode")
 
 ## Built With
 

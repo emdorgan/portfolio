@@ -1,20 +1,19 @@
-:root {
-    /* --mainSiteBorder: rgb(96, 96, 224); */
+:root { /* variables are declared here to make changing easier */
     --mainSiteBorder:#CEBAC8;
     --sidebarColor: #908DFF;
     --pinkTextColor: #CEBAC8;
 }
 
-body {
+body { /* sets the fonts for the document, adds a background image to the landing page */
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(../images/bgimage.jpg);
     background-repeat:no-repeat;
 }
 
-.page{
+.page{ /* this creates an offset to prevent the page from flying under the fixed position header */
     padding-left: 25%;
 }
-.page > section {
+.page > section { /* sets the height of each page (exceptions are overwritten with ID selectors below), adds a margin and padding to prevent overlap */
     padding-top: 30px;
     height: 100vh;
     margin-right: 10px;
@@ -27,7 +26,7 @@ body {
 .page #portfolio {
     height: 200vh;
 }
-header {
+header { /* sets the color, font color, z index and width of the header makes the position fixed so that nav and contact links are always stays 1 click away (important UX) */
     background-color: var(--sidebarColor);
     z-index: 1;
     width: 25%;
@@ -37,56 +36,56 @@ header {
     color: white;
 }
 
-a:link, a:visited, a:active, a {
+a:link, a:visited, a:active, a { /* removes text decoration from hyperlinks */
     text-decoration: none;
 }
 
 header a, .social-media {
     color: var(--pinkTextColor);
 }
-header a:hover, header a:active {
+header a:hover, header a:active { /* changes color on hover indicate that htey are clickable */
     color: white;
     /* font-size: 1.1em; Needs to be fixed; see readme improvements*/ 
 }
 
-header .profile {
+header .profile { /* positions the profile section */
     position: absolute;
     left: 12%;
     top: 5%;
 }
 
-header img {
+header img { /* sets the dimansions for the profile picture, border radius 50% makes it a circle */
     height: 152px;
     width: 152px;
     border-radius: 50%;
     margin-bottom: 5px;
 }
-header h1 {
+header h1 {  /* sets font-size + weight for "Emily Dorgan" and a margin */
     margin: 10px;
     font-size: 1.8em;
     font-weight: bold;
 }
 
-header nav {
+header nav { /* sets nav position to absolute and offsets from the top and left relative to it's parent container (header) */
     position: absolute;
     text-align: center;
     left: 25%;
     top: 35%;
 }
-.fa-bars {
+.fa-bars { /* sets size for the nav menu icon that shows up on small screen mode */
     font-size: 3em;
 }
-.mobile-nav {
+.mobile-nav { /* hides the mobile nav icon if screen is > than 768px */
     visibility: hidden;
 }
 
-header nav li {
+header nav li { /* sets margins, padding and font-size for the nav links */
     margin: 20px 0px 20px 0px;
     padding: 10px;
     font-size: 1.4em;
 }
 
-header .social-media {
+header .social-media { /* sets position of social media section to the bottom of the header */
     font-size: 20px;
     position: absolute;
     bottom: 0;
@@ -101,34 +100,34 @@ header .social-media p {
     left: 40px;
 }
 
-header .social-media .fa {
+header .social-media .fa { /* sets fontsize for the font awesome icons */
     margin: 10px;
     margin-top: 15px;
     font-size: 1.1em;
 }
 
-.page {
+.page { /* declares the page class as a flex container and sets direction to column */
     display: flex;
     flex-direction: column;
 }
 
-.page h2 {
+.page h2 { /* sets font-size and padding for all the headings */
     font-size: 36px;
     padding-bottom: 10px;
     padding-left: 5px;
 }
 
-.page p {
+.page p { /* sets the paragraph text size for non-header p elements */
     font-size: 18px;
 }
 
-.introduction {
+.introduction { /* container for the textbox welcoming people to my portfolio */
     position: absolute;
     top: 40%;
     left: 30%;
     display: inline-block;
 }
-.introduction a, .introduction div {
+.introduction a, .introduction div { /* styles the 'see my work' box */
     position: relative;
     display: inline-block;
     color: #000000;
@@ -148,34 +147,33 @@ header .social-media .fa {
     display: inline-block;
 }
 
-#portfolio .flex {
+#portfolio .flex { /* declares the container holding my projects to be a flexbox, allows them to wrap and sets direction to row */
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 .portfolio-header {
     padding-bottom: 5px;
     margin-bottom: 5px;
     padding-left: 5px;
 }
-.flex a {
+.flex a { /* sets the flex-grow property to 1 so that the rest of the projects are smaller than the featured project */
     margin: 5px;
     flex-grow: 1;
     flex-basis: 40%;
 }
-.flex #refactor-project {
+.flex #refactor-project { /* sets the flex-grow property to 2 so that the featured project is twice the size (note: change the class name to be easier to edit when future projects are added) */
     flex-grow: 2;
     flex-basis: 80%;
 }
 
-.flex a:hover {
+.flex a:hover { /* makes the projects "pop" a lil bit with an animation */
     position:relative;
     animation-duration: .2s;
     animation-name: uplift;
     animation-fill-mode: forwards;
 }
 
-@keyframes uplift {
+@keyframes uplift { /* creates the animation where a box moves up and left on hover */
     from {
         right: 0px;
         bottom: 0px;
@@ -186,19 +184,19 @@ header .social-media .fa {
     }
 }
 
-.flex a img{
+.flex a img{ /* container that scales the images horizontally and creates the pink border */
     width:100%;
     height: auto;
     border:5px solid var(--mainSiteBorder);
     border-radius: 2%;
 }
-#non-featured{
+#non-featured{ /* overwrites the previous rule to make the non-featured projects smaller */
     width:90%;
     height: auto;
     border:5px solid var(--mainSiteBorder);
     border-radius: 2%;
 }
-.project-container {
+.project-container { /* creates the textboxes that float on the project images */
     position: absolute;
     margin-top: 100px;
     padding: 10px;
@@ -210,7 +208,7 @@ header .social-media .fa {
     font-size: 24px;
     padding-bottom: 10px;
 }
-.top-of-the-page {
+.top-of-the-page { /* Creates an elegant line between the page heading and it's contents */
     font-weight: bold;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
@@ -219,25 +217,25 @@ header .social-media .fa {
     font-weight: bold;
 }
 
-#contact-me p {
+#contact-me p { /* unique styling for the contact me page */
     padding: 5px 0px 5px 0px;
 }
 #contact-me ul{
     margin: 15px 0px 0px 30px;
 }
 
-#about-me p {
+#about-me p { /* unique styling for the about me page */
     text-indent: 50px;
     padding: 30px 0px 30px 0px;
 }
 
-.picture-album {
+.picture-album { /* creates a flexbox to hold the pictures, spaces them, and allows them to be responsive to screensize */
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
 
-.picture-frame {
+.picture-frame { /* creates borders that mimic a picture frame, and automatically scales the images */
     border: 10px ridge white;
     box-shadow: 5px 5px 5px black;
     width: 250px;
@@ -254,16 +252,16 @@ footer{
 
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){ /* responsive media query for screens under 768px; completely changes the location of the header to the top of the document */
     body{
         flex-direction: column;
     }
     
-    header{
+    header{ /* flips the header to the top of the page. */
         width: 100%;
         height: 20%;
         min-height: 120px;
-        display:flex;
+        display:flex; /* this rule might not be necessary but I'm too scared to remove it */
     }
     header #navLinks {
         display: none;
@@ -272,25 +270,26 @@ footer{
         padding-left: 0;
         padding-top: 20%;
     }
-    .page > section {
+    .page > section { /* prevents the nav bar from overlapping the content of the page */
         padding-top: max(22%, 140px);
     }
-    header .profile {
+    
+    header .profile { /* resets the positioning of the profile picture */
         top: 10%;
         left: 30%;
     }
-    header h1, header .profile p{
+    header h1, header .profile p{ /* hides the name and title since space is limited */
         visibility: hidden;
         
     }
-    .mobile-nav {
+    .mobile-nav { /* sets the 3 bars icon to visible */
         position: fixed;
         visibility: visible;
         right: 40px;
         top: 40px;
     }
 
-    header li {
+    header li { /* adds padding to nav links now that they are in dropdown menu mode */
         background-color: var(--sidebarColor);
         padding-top: 0;
         padding-left: 50px;
@@ -303,7 +302,7 @@ footer{
         margin-bottom: 5px;
     }
 
-    header nav {
+    header nav { /* sets positioning of the nav to stick to the top right of the page */
         background-color: var(--sidebarColor);;
         position: absolute;
         right: 0px;
@@ -315,7 +314,7 @@ footer{
     header ul {
         background-color: var(--sidebarColor);
     }
-    header .social-media {
+    header .social-media { /* sets positioning of the social media icons and makes them bigger */
         top: 35px;
         left: 10px;
         position: absolute;
@@ -330,27 +329,28 @@ footer{
         top: 40%;
         left: 20%;
     }
-    .project-container p{
+    .project-container p{ /* hides the description of the projects in small screen mode */
         display: none;
     }
     .project-container{
         margin-top: 40px;
     }
-    #about-me {
+    #about-me { /* fixes an overlapping issue in small screen mode */
         height: 150vh;
     }
     .picture-album {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* allows the flex items to wrap in mobile mide */
     }
 }
-@media only screen and (max-width: 400px){
-    header .profile {
+@media only screen and (max-width: 400px){ /* makes some minor adjustments for mobile phone viewport */
+    header .profile { /* hides profile pic on mobile mode, space is at a premium on tiny screens */
         visibility: hidden;
     }
-    .project-container h3 {
+    .project-container h3 { /* changes font size of project image texts when they get super small */
         font-size: 16px;
     }
-    .project-container{
+    .project-container{ /* prevents project image texts from flying off their respective images on tiny screens */
         margin-top: 20px;
     }
+    
 }
