@@ -342,7 +342,7 @@ footer{
         flex-wrap: wrap; /* allows the flex items to wrap in mobile mide */
     }
 }
-@media only screen and (max-width: 400px){ /* makes some minor adjustments for mobile phone viewport */
+@media only screen and (max-width: 414px){ /* makes some minor adjustments for mobile phone viewport */
     header .profile { /* hides profile pic on mobile mode, space is at a premium on tiny screens */
         visibility: hidden;
     }

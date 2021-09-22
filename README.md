@@ -16,6 +16,7 @@ If you click on the links (or just open and close the mobile nav) in mobile mode
 * spacing between non-featured projects could be improved to be more consistent.
 * Make my name and title show up on the dropdown menu in small screen mode
 * Change the id selector of the featured project to make it more flexible and easier to edit.
+* Stop the nav bar from resizing vertically and stacking elements on top of each other.
 
 # Screenshots
 
