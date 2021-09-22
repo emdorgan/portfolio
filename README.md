@@ -4,6 +4,8 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
+* Fix the bug where the nav items get hidden on browser resize
+* Figure out why the text-wrap changes abruptly on portfolio page
 * change padding or margin between nav items to be % based.
 * Figure out elegant background image for landing page.
 * Make the social media icons shrink (or resize on ~300px width screen)
@@ -37,3 +39,4 @@ The goal of this project is to put together a professional portfolio to showcase
 ## Acknowledgments
 
 * [W3Schools Mobile nav bar Tutorial](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
+* [Font Awesome for the icons](https://fontawesome.com/)
