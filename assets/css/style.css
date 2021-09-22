@@ -1,5 +1,6 @@
 :root {
-    --mainSiteBorder: rgb(96, 96, 224);
+    /* --mainSiteBorder: rgb(96, 96, 224); */
+    --mainSiteBorder:#CEBAC8;
     --sidebarColor: #908DFF;
     --pinkTextColor: #CEBAC8;
 }
@@ -153,11 +154,6 @@ header .social-media .fa {
     margin-bottom: 5px;
     padding-left: 5px;
 }
-/* .flex article {  REMEMBER TO DELETE THIS ONCE the articles are changed to anchors 
-    margin: 5px;
-    flex-grow: 1;
-    flex-basis: 40%;
-} */
 .flex a {
     margin: 5px;
     flex-grow: 1;
@@ -204,11 +200,26 @@ header .social-media .fa {
     padding: 10px;
     background-color: var(--mainSiteBorder);
     width: 30%;
-    color: white;
+    color: black;
 }
 .project-container h3{
     font-size: 24px;
     padding-bottom: 10px;
+}
+.top-of-the-page {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+#portfolio h2 {
+    font-weight: bold;
+}
+
+#contact-me p {
+    padding: 5px 0px 5px 0px;
+}
+#contact-me ul{
+    margin: 15px 0px 0px 30px;
 }
 
 @media only screen and (max-width: 768px){

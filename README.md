@@ -4,15 +4,15 @@ The goal of this project is to put together a professional portfolio to showcase
 
 # To-do list
 
+* Figure out elegant background image for landing page.
+* Style the About Me page
+
+# Possible improvements
+
 * Fix the bug where the nav items get hidden on browser resize
 * Figure out why the text-wrap changes abruptly on portfolio page
 * change padding or margin between nav items to be % based.
-* Figure out elegant background image for landing page.
-* Make the social media icons shrink (or resize on ~300px width screen)
-* Make sure that when I click on portfolio images, I am taken to the deployed application.
-* Style the portfolio page (ensure one project takes up the majority of the page)
-* Style the About Me page
-* Style the Contact Me page
+
 
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 ![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
