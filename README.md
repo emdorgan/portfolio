@@ -23,7 +23,7 @@ If you click on the links (or just open and close the mobile nav) in mobile mode
 ![midsized-viewport](screenshots/midsized-viewport.png "Screenshot of the contact me page on small screen mode")
 ![about-me-page](screenshots/about-me-page.png "Screenshot of the about me page on desktop mode")
 ![mobile-viewport](screenshots/mobile-viewport.png "Screenshot of the projects page on mobile viewport")
-![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
+![wireframe](screenshots/wireframe.png "Figma wireframe featuring the color scheme and basic mockup")
 ![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 
 ## Built With
