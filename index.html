@@ -10,15 +10,15 @@
     <title>Emily Dorgan's Porfolio</title>
 </head>
 <body>
-    <header>
-        <div class="profile">
+    <header> <!-- This container refers to the blue/purple section on the lefthand side in desktop mode, and on the top side in mobile mode -->
+        <div class="profile"> <!-- Profile pic, name and title -->
             <a href="index.html">
                 <img src="./assets/images/profile.jpg" alt="profile picture">
             </a>
             <h1>Emily Dorgan</h1>
             <p>Full Stack Web Developer</br> (in training)</p>
         </div>
-        <nav>
+        <nav> <!-- nav section with links, on mobile mode it's repalced by a drop-down menu powered by Javascript -->
             <a href="javascript:void(0);" class="mobile-nav" onclick="openNav()">
                 <em class="fa fa-bars"></em>
             </a>
@@ -29,7 +29,7 @@
                 <li><a href="#resume" onclick="closeNav()"> Resum&eacute</a></li>
             </ul>
         </nav>
-        <div class="social-media">
+        <div class="social-media"> <!-- social media icons (note: I don't have an instagram yet, which is why that link doesn't work) -->
             <p>get in touch:</p>
             <a href="https://mail.google.com/mail/u/0/?fs=1&to=wmdorgan@gmail.com&tf=cm" class="fa fa-envelope"></a>
             <a href="https://github.com/emdorgan" class="fa fa-github"></a>
@@ -37,10 +37,10 @@
             <a href="#" class="fa fa-instagram"></a>
         </div>
     </header>
-    <section class="page">
-        <section id="landing-page">
+    <section class="page"> <!-- flexbox container that holds the landing, portfolio, contact me, about me and resume pages -->
+        <section id="landing-page">  <!-- Landing page, which is what the users first see when loading my portfolio -->
             <div class ="introduction">
-                <h2>I'm Emily (she/her), and I'm studying Web Development at UC Berkeley.</h2>
+                <h2>I'm Emily (she/her),</br> and I'm studying Web Development at UC Berkeley.</h2>
                 <a href="#portfolio">
                     <div>
                         <p>See my Work <i class="fas fa-arrow-down"></i></p>
@@ -48,18 +48,18 @@
                 </a>
             </div>
         </section>
-        <section id="portfolio">
+        <section id="portfolio"> <!-- portfolio page, with a list of my work (note: I'm using placeholder images featuring my cat for the projects that haven't been done yet) -->
             <h2>Portfolio</h2>
             <p class="portfolio-header">Here is a collection of my work, with the latest completed project listed first:</p>
-            <section class ="flex">
+            <section class ="flex"> <!-- flexbox container that holds my projects -->
                 <a id ="refactor-project" href="https://github.com/emdorgan/ez-access">
                     <div class="project-container">
-                        <h3>Horiseon Code Refactor</h3>
+                        <h3>Horiseon Code Refactor</h3> <!-- Latest completed project takes up more space than the others -->
                         <p>In this project, I refactored the main page to conform with accessiblity guidelines</p>
                     </div>
                     <img src="./assets/images/refactor-screenshot.png" alt="refactor project screenshot">
                 </a>
-                <a href="#" id ="password-project">
+                <a href="#" id ="password-project"> <!-- The entire container with the pink border is an anchor tag so it's clickable -->
                     <div class="project-container">
                         <h3>Password Generator</h3>
                         <p>In this project, I will make a password generator?</p>
@@ -89,7 +89,7 @@
                 </a>
             </section>
         </section>
-        <section id="contact-me">
+        <section id="contact-me"> <!-- contact me page -->
             <h2 class="top-of-the-page">Contact Me</h2>
             <p>I am currently seeking employment. If you believe that I am a good fit, reach me at:</p>
             <ul>
@@ -99,20 +99,20 @@
                 <li><p>Instagram: <a href="#" class="fa fa-instagram"> [instagram coming soon]</a></p></li>
             </ul>
         </section>
-        <section id="about-me">
+        <section id="about-me"> <!-- about me page -->
             <h2 class="top-of-the-page">About Me</h2>
             <p>
-                I've always been a curious person, and I have a strong love of learning new things, which is what brought me to the field of web development. Although my professional path has
+                I've always been a curious person and I have a strong love of learning new things, which is what brought me to the field of web development. Although my professional path has
                 taken some wild turns - most notably with the discovery that I am trans - I am now on track to pursue my dream career of developing attractive and interactive websites. I am
                 currently pursuing my education at UC Berkeley where I am learning web development at a greatly accelerated pace.
             </p>
-            <div class="picture-album">
-                <div class="picture-frame"><img src="./assets/images/emily1.jpg" alt="Emily picture 1"></div>
-                <div class="picture-frame"><img src="./assets/images/emily2.jpg" alt="Emily picture 1"></div>
-                <div class="picture-frame"><img src="./assets/images/emily3.jpg" alt="Emily picture 1"></div>
+            <div class="picture-album"> <!-- flexbox to make the images resize-able -->
+                <div class="picture-frame"><img src="./assets/images/emily1.jpg" alt="Emily with painted nails & Maya the cat"></div>
+                <div class="picture-frame"><img src="./assets/images/emily2.jpg" alt="Emily at the farmer's market"></div>
+                <div class="picture-frame"><img src="./assets/images/emily3.jpg" alt="Emily in golden gate park"></div>
             </div>
         </section>
-        <section id="resume">
+        <section id="resume">  <!-- resume page. I may turn this into an external link to a PDF later -->
             <h2 class="top-of-the-page">Resum&eacute</h2>
             <p>Resume placeholder</p>
         </section>
