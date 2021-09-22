@@ -17,11 +17,14 @@ If you click on the links (or just open and close the mobile nav) in mobile mode
 * Make my name and title show up on the dropdown menu in small screen mode
 * Change the id selector of the featured project to make it more flexible and easier to edit.
 
+# Screenshots
 
-![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
-![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
-![mobile-viewport](screenshots/mobile-viewport.png "Screenshot of the projects page on mobile viewport")
+![landing-page](screenshots/landing-page.png "Screenshot of the landing page")
+![midsized-viewport](screenshots/midsized-viewport.png "Screenshot of the contact me page on small screen mode")
 ![about-me-page](screenshots/about-me-page.png "Screenshot of the about me page on desktop mode")
+![mobile-viewport](screenshots/mobile-viewport.png "Screenshot of the projects page on mobile viewport")
+![wireframe](screenshots/wireframe.png "The initial sketched wireframe for mobile and desktop view")
+![paper-wireframe](screenshots/paper-wireframe.jpg "The initial sketched wireframe for mobile and desktop view")
 
 ## Built With
 
