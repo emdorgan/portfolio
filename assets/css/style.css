@@ -45,7 +45,7 @@ header a, .social-media {
 }
 header a:hover, header a:active { /* changes color on hover indicate that htey are clickable */
     color: white;
-    /* font-size: 1.1em; Needs to be fixed; see readme improvements*/ 
+    font-size: 1.1em;
 }
 
 header .profile { /* positions the profile section */
@@ -69,7 +69,7 @@ header h1 {  /* sets font-size + weight for "Emily Dorgan" and a margin */
 header nav { /* sets nav position to absolute and offsets from the top and left relative to it's parent container (header) */
     position: absolute;
     text-align: center;
-    left: 25%;
+    left: 15%;
     top: 35%;
 }
 .fa-bars { /* sets size for the nav menu icon that shows up on small screen mode */
@@ -82,7 +82,12 @@ header nav { /* sets nav position to absolute and offsets from the top and left 
 header nav li { /* sets margins, padding and font-size for the nav links */
     margin: 20px 0px 20px 0px;
     padding: 10px;
+    width: 100%;
+    height: 100%;
     font-size: 1.4em;
+}
+header nav .secret {
+    visibility: hidden;
 }
 
 header .social-media { /* sets position of social media section to the bottom of the header */
@@ -240,11 +245,13 @@ header .social-media .fa { /* sets fontsize for the font awesome icons */
     box-shadow: 5px 5px 5px black;
     width: 250px;
     height: auto;
-    margin:2px;
+   
     transform: rotate(-5deg);
 }
 .picture-frame img {
     width:100%;
+    height: auto;
+    margin-bottom: -4px;
 }
 footer{
     margin-left: 30%;
