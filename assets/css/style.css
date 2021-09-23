@@ -245,13 +245,12 @@ header .social-media .fa { /* sets fontsize for the font awesome icons */
     box-shadow: 5px 5px 5px black;
     width: 250px;
     height: auto;
-   
     transform: rotate(-5deg);
 }
 .picture-frame img {
     width:100%;
     height: auto;
-    margin-bottom: -4px;
+    /* margin-bottom: -4px; testing an issue, I suspect github pages doesn't support negative values*/
 }
 footer{
     margin-left: 30%;
