@@ -14,18 +14,20 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Avatar } from '@mui/material';
-import profilePicture from '../assets/images/profile.jpg'
+import profilePicture from '../assets/images/profile.jpg';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
     window?: () => Window;
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'Projects', 'About'];
 
 const Layout = (props: Props) => {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const navigate = useNavigate();
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -40,9 +42,9 @@ const Layout = (props: Props) => {
         <List>
         {navItems.map((item) => (
             <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary={item} />
-            </ListItemButton>
+                <ListItemButton key={item} sx={{ textAlign: 'center' }}>
+                    <ListItemText primary={item} />
+                </ListItemButton>
             </ListItem>
         ))}
         </List>
@@ -75,7 +77,11 @@ const Layout = (props: Props) => {
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }}>
+                <Button 
+                    key={item} 
+                    sx={{ color: '#fff' }}
+                    onClick={() => navigate(item === 'Home' ? '/' : `/${item.toLocaleLowerCase()}`)}
+                >
                 {item}
                 </Button>
             ))}
