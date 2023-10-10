@@ -3,7 +3,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 const Home = () => {
     return (
-        <Container sx={{ marginTop: '120px' }}>
+        <Container maxWidth={false} disableGutters sx={{ marginTop: '120px' }}>
             <Grid container spacing={2}>
                 <Grid xs={12}>
                     <Typography>Home Page</Typography>
