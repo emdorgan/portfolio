@@ -5,14 +5,20 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import { createTheme } from '@mui/material';
+import Projects from './pages/Projects';
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#1976d2',
-            light: '#42a5f5',
-            dark: '#1565c0',
-            contrastText: '#fff',
+            main: '#3e4a88',
+        },
+        divider: '#ffffff',
+        background: {
+            default: '#2c2c2c',
+            paper: '#2c2c2c',
+        },
+        text: {
+            primary: '#fff'
         }
     }
 });
@@ -25,6 +31,7 @@ const App = () => {
             <Routes>
                 <Route path="/" Component={Home} />
                 <Route path="/about" Component={About} />
+                <Route path="/projects" Component={Projects} />
             </Routes>
         </Router>
     </ThemeProvider>

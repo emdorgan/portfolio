@@ -1,9 +1,9 @@
 import { Container, Typography } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
 
-const Home = () => {
+const Projects = () => {
     return (
-        <Container sx={{ marginTop: '20vh' }}>
+        <Container sx={{ marginTop: '120px' }}>
             <Grid container spacing={2}>
                 <Grid xs={12}>
                     <Typography>Projects Page</Typography>
@@ -13,4 +13,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Projects;
