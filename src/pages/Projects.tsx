@@ -3,22 +3,22 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 const Projects = () => {
     return (
-        <Container maxWidth={false} disableGutters  sx={{ marginTop: '120px', marginLeft: 0, marginRight: 0 }}>
+        <Container maxWidth={false} disableGutters  sx={{marginTop: '120px', marginLeft: 0, marginRight: 0}}>
             <Grid container spacing={2}>
                 <Grid xs={12}>
-                    <Typography variant="h3" sx={{margin: '0.5em', float: "left"}}>Current Project</Typography>
+                    <Typography variant='h4' sx={{margin: '0.5em', float: 'left', borderBottom: 1, borderColor: 'white'}}>Current Project</Typography>
                 </Grid>
                 <Grid xs={12}>
-                    <Typography sx={{margin: '1em', float: "left"}}>Dynamic Esports Event Calendar</Typography>
+                    <Typography sx={{margin: '1em', float: 'left'}}>Dynamic Esports Event Calendar</Typography>
                 </Grid>
                 <Grid xs={12}>
-                    <Typography variant="h3" sx={{margin: '0.5em', float: "left"}}>Past Projects</Typography>
+                    <Typography variant='h4' sx={{margin: '0.5em', float: 'left', borderBottom: 1, borderColor: 'white'}}>Past Projects</Typography>
                 </Grid>
                 <Grid xs={6}>
-                    <Typography sx={{margin: '1em', float: "left"}}>Dynamic Esports Event Calendar</Typography>
+                    <Typography sx={{margin: '1em', float: 'left'}}>Dynamic Esports Event Calendar</Typography>
                 </Grid>
                 <Grid xs={6}>
-                    <Typography sx={{margin: '1em', float: "left"}}>Dynamic Esports Event Calendar</Typography>
+                    <Typography sx={{margin: '1em', float: 'left'}}>Dynamic Esports Event Calendar</Typography>
                 </Grid>
             </Grid>
         </Container>

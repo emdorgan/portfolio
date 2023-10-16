@@ -16,13 +16,17 @@ import Button from '@mui/material/Button';
 import { Avatar } from '@mui/material';
 import profilePicture from '../assets/images/profile.jpg';
 import { useNavigate } from 'react-router-dom';
+import resume from '../assets/pdf/emd-portfolio.pdf'
+
+//@TODO make variant where resume link is different based on if the user followed the link from my tech solutions resume or my web dev resume
+
+const domWindow = window;
 
 interface Props {
     window?: () => Window;
 }
-
 const drawerWidth = 240;
-const navItems = ['Home', 'Projects', 'About'];
+const navItems = ['Home', 'Projects', 'Resume', 'About'];
 
 const Layout = (props: Props) => {
     const { window } = props;
@@ -80,7 +84,18 @@ const Layout = (props: Props) => {
                 <Button 
                     key={item} 
                     sx={{ color: '#fff' }}
-                    onClick={() => navigate(item === 'Home' ? '/' : `/${item.toLocaleLowerCase()}`)}
+                    onClick={() => {
+                        switch (item) {
+                            case 'Home':
+                                navigate('/');
+                                break;
+                            case 'Resume':
+                                domWindow.open(resume);
+                                break;
+                            default: 
+                            navigate(`/${item.toLocaleLowerCase()}`);
+                        }
+                    }}
                 >
                 {item}
                 </Button>
