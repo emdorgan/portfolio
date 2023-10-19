@@ -39,7 +39,7 @@ const Layout = (props: Props) => {
 
     const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-        <Typography variant="h4" sx={{ my: 2 }}>
+        <Typography variant="h3" sx={{ my: 2 }}>
             Emily Dorgan
         </Typography>
         <Divider />
@@ -71,7 +71,13 @@ const Layout = (props: Props) => {
             >
             <MenuIcon />
             </IconButton>
-            <Avatar alt="Emily Dorgan" src={profilePicture} sx={{width: '100px', height: '100px', m: '10px'}}/>
+            <Avatar 
+                alt="Emily Dorgan" 
+                src={profilePicture} 
+                sx={{width: '100px', height: '100px', m: '10px'}}
+                onClick={()=> navigate('/')}
+                style={{ cursor: 'pointer' }}
+            />
             <Typography
             variant="h4"
             component="div"
