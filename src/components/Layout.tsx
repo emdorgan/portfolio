@@ -20,6 +20,7 @@ import resume from '../assets/pdf/emd-portfolio.pdf'
 
 //@TODO make variant where resume link is different based on if the user followed the link from my tech solutions resume or my web dev resume
 
+//@TODO center the image on mobile screens
 const domWindow = window;
 
 interface Props {

@@ -1,10 +1,49 @@
-import { Button, Container, List, ListItem, Typography } from "@mui/material"
+import { Box, Button, Container, List, ListItem, Typography, useMediaQuery } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
+import catventure from '../assets/images/catventure.png';
+import traveleeze from '../assets/images/traveleeze.png';
+import kitchy from '../assets/images/kitschy.png';
+import ImageCard from "../components/ImageCard";
+import { useTheme } from "@emotion/react";
 
-//@TODO add technologies used
-//@TODO for the e-sports calendar, describe challenges
+//@TODO Re-host Traveleeze, it's broken
+
+export type Project = {
+    image : string;
+    title : string;
+    description : string;
+    repo : string;
+    deployed : string;
+}
+
+const projectList : Project[] = [
+    {
+        image: catventure,
+        title: 'Catventure!',
+        description: 'Turn based Role Playing Game with cute cats, coded with the MERN stack',
+        repo: 'https://github.com/emdorgan/catventure-game',
+        deployed: 'https://catventure.herokuapp.com/',
+    },
+    {
+        image: traveleeze,
+        title: 'Traveleeze',
+        description: 'Trip planner app with custom packing lists, full-stack app with MySQL database',
+        repo: 'https://github.com/emdorgan/trip-planner',
+        deployed: 'https://evening-fjord-31070.herokuapp.com/',
+    },
+    {
+        image: kitchy,
+        title: 'Kitchy',
+        description: 'Search recipies, save your favorites and compile a grocery list, coded with jQuery',
+        repo: 'https://github.com/emdorgan/kitschy-app',
+        deployed: 'https://starryblue7.github.io/kitschy-app/',
+    }
+]
 
 const Projects = () => {
+    const theme = useTheme();
+    const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
+
     return (
         <Container maxWidth={false} disableGutters  sx={{marginTop: '120px', marginLeft: 0, marginRight: 0}}>
             <Grid container spacing={0}>
@@ -35,6 +74,10 @@ const Projects = () => {
                         <ListItem>- An admin page for processing said applications</ListItem>
                         <ListItem>- A QR 'badge' system for students to check into activity kiosks</ListItem>
                     </List>
+                    <Typography align='left' variant='h4' sx={{margin: '0.5em'}}>Completed Projects</Typography>
+                    <Box flexDirection={isLargeScreen ? 'row' : 'column'} sx={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
+                        {projectList.map((project) => <ImageCard project={project} />)}
+                    </Box>
                 </Grid>
                 <Grid md={1} sm={0}></Grid>
             </Grid>
