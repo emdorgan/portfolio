@@ -39,7 +39,7 @@ const Layout = (props: Props) => {
 
     const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-        <Typography variant="h3" sx={{ my: 2 }}>
+        <Typography variant="h4" sx={{ m: 2, fontFamily: 'Ariel'}}>
             Emily Dorgan
         </Typography>
         <Divider />
@@ -48,7 +48,7 @@ const Layout = (props: Props) => {
             <ListItem key={item} disablePadding>
                 <ListItemButton 
                     key={item}  
-                    sx={{ textAlign: 'center' }}
+                    sx={{ textAlign: 'center'}}
                     onClick={() => {
                         switch (item) {
                             case 'Home':
@@ -62,7 +62,7 @@ const Layout = (props: Props) => {
                         }
                     }}
                 >
-                    <ListItemText primary={item} />
+                    <ListItemText primary={item}/>
                 </ListItemButton>
             </ListItem>
         ))}
@@ -96,7 +96,7 @@ const Layout = (props: Props) => {
             <Typography
             variant="h4"
             component="div"
-            sx={{ flexGrow: 1, display: { md: 'none', sm: 'none', xs: 'none', lg: 'block' }, fontSize: 40}}
+            sx={{ flexGrow: 1, display: { md: 'none', sm: 'none', xs: 'none', lg: 'block' }, fontSize: 40, fontFamily: 'Ariel', pl: '15%'}}
             >
             Emily Dorgan
             </Typography>
@@ -104,6 +104,7 @@ const Layout = (props: Props) => {
             {navItems.map((item) => (
                 <Button 
                     key={item} 
+                    size='large'
                     sx={{ color: '#fff' }}
                     onClick={() => {
                         switch (item) {
