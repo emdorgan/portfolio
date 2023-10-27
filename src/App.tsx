@@ -20,7 +20,14 @@ const theme = createTheme({
         text: {
             primary: '#fff'
         }
-    }
+    },
+    typography: {
+        "fontFamily": `"Helvetica", "Arial", sans-serif`,
+        "fontSize": 16,
+        "fontWeightLight": 300,
+        "fontWeightRegular": 400,
+        "fontWeightMedium": 500
+       }
 });
 
 const App = () => {

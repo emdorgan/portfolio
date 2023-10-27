@@ -6,19 +6,19 @@ import kitchy from '../assets/images/kitschy.png';
 import ImageCard from "../components/ImageCard";
 import { useTheme } from "@emotion/react";
 
-//@TODO Re-host Traveleeze, it's broken
-
 export type Project = {
     image : string;
+    imageAltText : string;
     title : string;
     description : string;
     repo : string;
-    deployed : string;
+    deployed ?: string;
 }
 
 const projectList : Project[] = [
     {
         image: catventure,
+        imageAltText: 'Screenshot of catventure',
         title: 'Catventure!',
         description: 'Turn based Role Playing Game with cute cats, coded with the MERN stack',
         repo: 'https://github.com/emdorgan/catventure-game',
@@ -26,19 +26,20 @@ const projectList : Project[] = [
     },
     {
         image: traveleeze,
+        imageAltText: 'Screenshot of Traveleeze',
         title: 'Traveleeze',
         description: 'Trip planner app with custom packing lists, full-stack app with MySQL database',
         repo: 'https://github.com/emdorgan/trip-planner',
-        deployed: 'https://evening-fjord-31070.herokuapp.com/',
     },
     {
         image: kitchy,
+        imageAltText: 'Screenshot of Kitchy',
         title: 'Kitchy',
         description: 'Search recipies, save your favorites and compile a grocery list, coded with jQuery',
         repo: 'https://github.com/emdorgan/kitschy-app',
         deployed: 'https://starryblue7.github.io/kitschy-app/',
-    }
-]
+    },
+];
 
 const Projects = () => {
     const theme = useTheme();

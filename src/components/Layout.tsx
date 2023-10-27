@@ -20,7 +20,6 @@ import resume from '../assets/pdf/emd-portfolio.pdf'
 
 //@TODO make variant where resume link is different based on if the user followed the link from my tech solutions resume or my web dev resume
 
-//@TODO center the image on mobile screens
 const domWindow = window;
 
 interface Props {
@@ -47,7 +46,22 @@ const Layout = (props: Props) => {
         <List>
         {navItems.map((item) => (
             <ListItem key={item} disablePadding>
-                <ListItemButton key={item} sx={{ textAlign: 'center' }}>
+                <ListItemButton 
+                    key={item}  
+                    sx={{ textAlign: 'center' }}
+                    onClick={() => {
+                        switch (item) {
+                            case 'Home':
+                                navigate('/');
+                                break;
+                            case 'Resume':
+                                domWindow.open(resume);
+                                break;
+                            default: 
+                            navigate(`/${item.toLocaleLowerCase()}`);
+                        }
+                    }}
+                >
                     <ListItemText primary={item} />
                 </ListItemButton>
             </ListItem>
@@ -59,7 +73,7 @@ const Layout = (props: Props) => {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex'}}>
         <CssBaseline />
         <AppBar component="nav">
         <Toolbar>
@@ -68,25 +82,25 @@ const Layout = (props: Props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { lg: 'none' }}}
             >
-            <MenuIcon />
+            <MenuIcon sx={{fontSize: '2em'}} />
             </IconButton>
             <Avatar 
                 alt="Emily Dorgan" 
                 src={profilePicture} 
-                sx={{width: '100px', height: '100px', m: '10px'}}
+                sx={{width: '100px', height: '100px', m: {lg: '10px 0px 10px 0%', sm: '10px 0px 10px 30%', xs: '10px 0px 10px 15%',}}}
                 onClick={()=> navigate('/')}
                 style={{ cursor: 'pointer' }}
             />
             <Typography
             variant="h4"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { md: 'none', sm: 'none', xs: 'none', lg: 'block' }, fontSize: 40}}
             >
             Emily Dorgan
             </Typography>
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <Box sx={{ display: { md: 'none', sm: 'none', xs: 'none', lg: 'block' } }}>
             {navItems.map((item) => (
                 <Button 
                     key={item} 
@@ -120,7 +134,7 @@ const Layout = (props: Props) => {
             keepMounted: true,
             }}
             sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { md: 'block', lg: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
             }}
         >

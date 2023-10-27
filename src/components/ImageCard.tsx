@@ -11,28 +11,28 @@ type Props = {
 };
 
 const ImageCard = ({project} : Props) => {
-  return (
-    <Card sx={{ maxWidth: 400, border: '1px solid #fff', color: '#fff', m: '1em' }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="300"
-        image={project.image}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{borderBottom: '1px solid #fff'}}>
-          {project.title}
-        </Typography>
-        <Typography variant="body2">
-          {project.description}
-        </Typography>
-      </CardContent>
-      <CardActions sx={{display: 'flex', justifyContent: 'center'}}>
-        <Button sx={{m: '2em'}} variant='contained' onClick={()=> window.open(project.repo)}>View Repo</Button>
-        <Button sx={{m: '2em'}} variant='contained' onClick={()=> window.open(project.deployed)}>View Deployed</Button>
-      </CardActions>
-    </Card>
-  );
+    return (
+        <Card sx={{ maxWidth: 400, border: '1px solid #fff', color: '#fff', m: '1em' }}>
+            <CardMedia
+                component="img"
+                alt={project.imageAltText}
+                height="300"
+                image={project.image}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div" sx={{borderBottom: '1px solid #fff'}}>
+                    {project.title}
+                </Typography>
+                <Typography variant="body2">
+                    {project.description}
+                </Typography>
+            </CardContent>
+            <CardActions sx={{display: 'flex', justifyContent: 'center'}}>
+                <Button sx={{m: '2em'}} variant='contained' onClick={()=> window.open(project.repo)}>View Repo</Button>
+                {project.deployed && <Button sx={{m: '2em'}} variant='contained' onClick={()=> window.open(project.deployed)}>View Deployed</Button>}
+            </CardActions>
+        </Card>
+    );
 }
 
 export default ImageCard;

@@ -1,18 +1,34 @@
-import { Button, Container, Typography } from "@mui/material"
+import { useTheme } from "@emotion/react";
+import { Button, Container, Typography, useMediaQuery } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const navigate = useNavigate();
+    const theme = useTheme();
+    const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
+
+    const largeScreenStyling = {
+        m: '10% 0 1% 0', 
+        fontSize: '2em', 
+        fontFamily:'Ariel'
+    };
+
+    const smallScreenStyling = {
+        m: '5%', 
+        fontSize: '1.5em', 
+        fontFamily:'Ariel'
+    }
+    
 
     return (
         <Container maxWidth={false} disableGutters sx={{ marginTop: '120px' }}>
-            <Grid container spacing={2}>
+            <Grid container spacing={0}>
                 <Grid xs={12}>
-                    <Typography>I'm Emily Dorgan, a Full Stack Developer with experience building custom web applications for small and medium</Typography>
+                    <Typography sx={isLargeScreen ? largeScreenStyling : smallScreenStyling}>I'm a Full Stack Developer with experience building custom web applications.</Typography>
                 </Grid>
                 <Grid xs={12}>
-                    <Button variant='contained' onClick={()=> navigate('/projects')}>See my Work</Button>
+                    <Button size="large" variant='contained' onClick={()=> navigate('/projects')}>See my Work</Button>
                 </Grid>
             </Grid>
         </Container>
