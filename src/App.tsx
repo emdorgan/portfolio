@@ -4,10 +4,10 @@ import { ThemeProvider } from '@emotion/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
-import { createTheme } from '@mui/material';
+import { Theme, createTheme } from '@mui/material';
 import Projects from './pages/Projects';
 
-const theme = createTheme({
+const theme : Theme = createTheme({
     palette: {
         primary: {
             main: '#3e4a88',
@@ -27,7 +27,16 @@ const theme = createTheme({
         "fontWeightLight": 300,
         "fontWeightRegular": 400,
         "fontWeightMedium": 500
-       }
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 960,
+            lg: 1280,
+            xl: 1920,
+        },
+    },
 });
 
 const App = () => {

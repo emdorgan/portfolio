@@ -1,12 +1,10 @@
-import { useTheme } from "@emotion/react";
-import { Button, Container, Typography, useMediaQuery } from "@mui/material"
+import { Button, Container, Theme, Typography, useMediaQuery } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const navigate = useNavigate();
-    const theme = useTheme();
-    const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
+    const isLargeScreen = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'));
 
     const largeScreenStyling = {
         m: '10% 0 1% 0', 

@@ -1,10 +1,9 @@
-import { Box, Button, Container, List, ListItem, Typography, useMediaQuery } from "@mui/material"
+import { Box, Button, Container, List, ListItem, Theme, Typography, useMediaQuery } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
 import catventure from '../assets/images/catventure.png';
 import traveleeze from '../assets/images/traveleeze.png';
 import kitchy from '../assets/images/kitschy.png';
 import ImageCard from "../components/ImageCard";
-import { useTheme } from "@emotion/react";
 
 export type Project = {
     image : string;
@@ -42,8 +41,7 @@ const projectList : Project[] = [
 ];
 
 const Projects = () => {
-    const theme = useTheme();
-    const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
+    const isLargeScreen = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'));
 
     return (
         <Container maxWidth={false} disableGutters  sx={{marginTop: '120px', marginLeft: 0, marginRight: 0}}>
