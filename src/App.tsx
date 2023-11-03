@@ -42,7 +42,7 @@ const theme : Theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename='/portfolio'>
             <Layout/>
             <Routes>
                 <Route path="/" Component={Home} />
