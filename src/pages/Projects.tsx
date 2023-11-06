@@ -64,14 +64,17 @@ const Projects = () => {
 
                     <Typography align='left' sx={{margin: '1em', textIndent: '3em'}}>
                         As an Associate Cloud Native Application Developer, it was my responsibility to create custom full stack websites for our clients.
-                        The tech stack was most often a React Front end and a Node.js backend featuring MUI, React-Hook-Form, Tanstack, MikroORM and PostgreSQL.
-                        However due to the nature of our clients having their own infrastucture and needs, the tools we used varied extensively. Projects I was involved in included:
+                        The tech stack was most often a React front end with a Node.js backend and most often featured Material UI as a CSS framework, React-Hook-Form for data entry, Tanstack for making API calls, 
+                        MikroORM and PostgreSQL for data management. Many of Soliant's clients were using Claris FileMaker, so we frequently needed to write scripts in our APIs to interact with a FileMaker database.
+                        Furthermore, due to the nature of the consulting business, clients often had their own infrastucture and specialized needs which allowed me to grow my skillset. Projects I was involved in included:
                     </Typography>
                     <List>
-                        <ListItem>- An order form for coffee distributors belonging to a local coffee chain</ListItem>
-                        <ListItem>- A 11 page application for students attending a school district</ListItem>
-                        <ListItem>- An admin page for processing said applications</ListItem>
-                        <ListItem>- A QR 'badge' system for students to check into activity kiosks</ListItem>
+                        <ListItem>- An order form for coffee distributors with conditional rendering based on the current date/time.</ListItem>
+                        <ListItem>- An 11 page application for students attending a school district with USPS address validation.</ListItem>
+                        <ListItem>- An admin page for school administrators to process student applications.</ListItem>
+                        <ListItem>- A QR 'badge' system for students to check into activity kiosks.</ListItem>
+                        <ListItem>- A customer web portal for customers to pick their flooring installation date.</ListItem>
+                        <ListItem>- A web portal for collecting information from applicants of an apprenticeship.</ListItem>
                     </List>
                     <Typography align='left' variant='h4' sx={{margin: '0.5em'}}>Completed Projects</Typography>
                     <Box flexDirection={isLargeScreen ? 'row' : 'column'} sx={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'}}>
